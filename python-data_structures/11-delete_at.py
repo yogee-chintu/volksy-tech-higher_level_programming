@@ -5,4 +5,4 @@ def delete_at(my_list=[], idx=0):
         return(copyList)
     del my_list[idx]
     copyList = my_list.copy()
-    return(
+    return(copyList)
