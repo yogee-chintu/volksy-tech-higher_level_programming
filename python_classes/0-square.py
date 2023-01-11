@@ -1,2 +1,3 @@
-#!/usr/bin/python3
-class Square
+#!/usr/bin/python
+class Square:
+    pass
