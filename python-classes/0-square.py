@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-'''HIIi '''
+'''HIIi'''
 
 
 class Square
-    """hello'''
+    """hello hello 0 squre"""
     pass
