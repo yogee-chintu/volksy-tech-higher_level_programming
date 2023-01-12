@@ -8,7 +8,7 @@ class Square:
     """
     Module Square
     """
-    def __init__(self,size=0, position=(0, 0)):
+    def __init__(self, size=0, position=(0, 0)):
         self.size = size
         self.position = position
 
@@ -26,6 +26,15 @@ class Square:
             self.__size = value
 
     @property
+    def position(self):
+        """"
+        Getter
+        Return: position
+        """
+        return self.__position
+
+
+    @position.setter
     def position(self, value):
         if type(value) is not tuple or len(value) != 2 or \
            type(value[0]) is not int or type(value[1]) is not int or \
