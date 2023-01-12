@@ -33,7 +33,6 @@ class Square:
         """
         return self.__position
 
-
     @position.setter
     def position(self, value):
         if type(value) is not tuple or len(value) != 2 or \
