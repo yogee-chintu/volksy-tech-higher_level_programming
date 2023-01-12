@@ -82,4 +82,3 @@ class SinglyLinkedList:
         new.next_node = tmp.next_node
         tmp.next_node = new
         return
-
