@@ -40,9 +40,18 @@ class SinglyLinkedList:
     SinglyLinkedList Module
     """
     def __init__(self):
+        """
+        Initializes singly linked list
+        Attributes:
+            head: private
+        """
         self.__head = None
 
     def __str__(self):
+        """
+        String representation of singly linked list needed to print
+        """
+        string = ""
         tmp = self.__head
         while tmp is not None:
             string += str(tmp.data)
@@ -50,6 +59,7 @@ class SinglyLinkedList:
             if tmp is not None:
                 string += "\n"
         return string
+
     def sorted_insert(self, value):
         """
         Inserts new nodes into singly linked list in sorted order
