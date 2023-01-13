@@ -4,7 +4,6 @@ Define an object
 """
 
 
-
 def lookup(obj):
-    """Return lis"""
+    """Return list"""
     return (dir(obj))
