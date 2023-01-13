@@ -1,24 +1,30 @@
 #!/usr/bin/python3
-"""yogee"""
-Rectangle = __import__('9-rectangle').Rectangle
+# 9-rectangle.py
+# Brennan D Baraban <375@holbertonschool.com>
+"""Defines a class Rectangle that inherits from BaseGeometry."""
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
+class Rectangle(BaseGeometry):
+    """Represent a rectangle using BaseGeometry."""
 
-class Square(Rectangle):
-
-    """Represent a square."""
-    def __init__(self, size):
-
-        """Initialize a new square.
-
+    def __init__(self, width, height):
+        """Intialize a new Rectangle.
         Args:
-
-            size (int): The size of the new square.
-
+            width (int): The width of the new Rectangle.
+            height (int): The height of the new Rectangle.
         """
+        super().integer_validator("width", width)
+        self.__width = width
+        super().integer_validator("height", height)
+        self.__height = height
 
-        self.integer_validator("size", size)
+    def area(self):
+        """Return the area of the rectangle."""
+        return self.__width * self.__height
 
-        super().__init__(size, size)
-
-        self.__size = size
+    def __str__(self):
+        """Return the print() and str() representation of a Rectangle."""
+        string = "[" + str(self.__class__.__name__) + "] "
+        string += str(self.__width) + "/" + str(self.__height)
+        return string
