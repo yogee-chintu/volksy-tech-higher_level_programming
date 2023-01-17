@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" REctangle python3 """
+"""RECTANGLE PYTHON PROGRAM"""
 
 
 class Rectangle:
