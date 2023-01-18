@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""python input output"""
 
 
 def read_file(filename=""):
