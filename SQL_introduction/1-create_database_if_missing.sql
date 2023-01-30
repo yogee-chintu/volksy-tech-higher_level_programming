@@ -1,2 +1,2 @@
--- creating database.
-CREATE DATABASE IF NOT EXITS hbtn_0c_0;
+-- creating database hbtn_0c_c.
+CREATE DATABASE IF NOT EXITS hbtn_0c_0 ;
