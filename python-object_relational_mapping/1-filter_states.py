@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ors task-1"""
 
-if __name__ = 'main':
+if __name__ == '__main__':
     import sys
     import MySQLdb
     conn=MySQLdb.connect(host='localhost', port=3306, user=sys.argv[1],
